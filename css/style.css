@@ -1,0 +1,843 @@
+:root {
+  --bs-primary: #d3ad69;
+  --bs-primary-rgb: 211, 173, 105;
+}
+
+.josefin {
+  font-family: "Josefin Sans";
+}
+
+.open {
+  font-family: "Open Sans";
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.header-contect .call {
+  transition: all 0.5s;
+}
+.header-contect .call:hover {
+  color: var(--bs-primary);
+}
+.header-contect .watch {
+  transition: all 0.5s;
+}
+.header-contect .watch:hover {
+  color: var(--bs-primary);
+}
+.header-contect .mail {
+  transition: all 0.5s;
+}
+.header-contect .mail:hover {
+  color: var(--bs-primary);
+}
+
+.header-icon i {
+  transition: all 0.5s;
+}
+.header-icon i:hover {
+  color: var(--bs-primary);
+}
+
+.header {
+  background-color: #121212;
+}
+.header .navbar {
+  background-color: #121212;
+  padding: 10px 100px;
+}
+.header .navbar .navbar-toggler {
+  background-color: white;
+}
+.header .navbar .navbar-toggler h4 {
+  padding: 0 20px;
+  float: left;
+}
+.header .navbar .navbar-nav .nav-item .nav-link {
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.banner-overlay .banner .carousel .carousel-inner .carousel-item .carousel-caption {
+  height: 100%;
+  padding: 90px 0;
+}
+.banner-overlay .banner .carousel .carousel-inner .carousel-item .carousel-caption button {
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+  transition: all 0.5s;
+}
+.banner-overlay .banner .carousel .carousel-inner .carousel-item .carousel-caption button:hover {
+  background-color: var(--bs-white);
+  color: black;
+}
+
+.post .bg-post {
+  background-image: url(../img/hair1_b028b05d-dcf1-46a5-9c45-de9dc2e0fe32.jpg);
+}
+.post .bg-post .card .post-btn {
+  background-color: black;
+  color: var(--bs-white);
+  transition: all 0.5s;
+}
+.post .bg-post .card .website-btn {
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+  border: 0;
+  transition: all 0.5s;
+  position: relative;
+}
+.post .bg-post .card .website-btn::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  border-top: 1px solid var(--bs-primary);
+  border-left: 1px solid var(--bs-primary);
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.post .bg-post .card .website-btn::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid var(--bs-primary);
+  border-bottom: 1px solid var(--bs-primary);
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.post .bg-post .card .website-btn:hover {
+  background-color: white;
+  color: black;
+}
+.post .bg-post .card .website-btn:hover::after {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+.post .bg-post .card .website-btn:hover::before {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+.post .bg-post .card .offcanvas {
+  z-index: 99999;
+}
+.post .bg-post .card .offcanvas .offcanvas-title {
+  text-align: center;
+  font-size: 40px;
+}
+.post .bg-post .card .offcanvas .offcanvas-body {
+  background-color: #191919;
+  text-align: start;
+}
+.post .bg-post .card .offcanvas .offcanvas-body h5 {
+  color: var(--bs-primary);
+  font-size: 18px;
+}
+.post .bg-post .card .offcanvas .offcanvas-body p {
+  color: rgb(118, 117, 117);
+}
+.post .bg-post .card:hover .post-btn {
+  background-color: var(--bs-primary);
+}
+
+.about .bg-about {
+  padding: 80px 50px;
+}
+.about .bg-about h5 {
+  line-height: 35px;
+}
+.about .bg-about p {
+  color: rgba(255, 255, 255, 0.529);
+}
+.about .bg-about .website-btn {
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+  border: 0;
+  transition: all 0.5s;
+  position: relative;
+}
+.about .bg-about .website-btn::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  border-top: 1px solid var(--bs-primary);
+  border-left: 1px solid var(--bs-primary);
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.about .bg-about .website-btn::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid var(--bs-primary);
+  border-bottom: 1px solid var(--bs-primary);
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.about .bg-about .website-btn:hover {
+  background-color: transparent;
+  color: white;
+}
+.about .bg-about .website-btn:hover::after {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+.about .bg-about .website-btn:hover::before {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+.about .bg-content p {
+  transition: all 0.5s;
+}
+.about .bg-content p:hover {
+  color: var(--bs-primary);
+}
+
+.bg-featured {
+  background-color: #fcf1db;
+  padding-bottom: 80px;
+}
+.bg-featured .Products-box {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 15px;
+  border: 10px solid #fcf1db;
+}
+.bg-featured .Products-box h4 {
+  transition: all 0.5s;
+}
+.bg-featured .Products-box h6 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #77a464;
+  font-size: 12px;
+  z-index: 99;
+}
+.bg-featured .Products-box .product-bg-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 25%;
+  width: 100%;
+  left: 100%;
+  visibility: hidden;
+  transition: all 0.3s;
+  z-index: 9;
+  background-color: rgba(255, 255, 255, 0.767);
+}
+.bg-featured .Products-box .product-overlay {
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  transition: all 0.5s;
+}
+.bg-featured .Products-box .icon-star {
+  position: relative;
+}
+.bg-featured .Products-box .icon-star .cart {
+  transition: all 0.5s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: black;
+}
+.bg-featured .Products-box .product-hover-icon {
+  position: absolute;
+  right: 5px;
+  top: 38%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
+  transition: all 0.5s;
+}
+.bg-featured .Products-box .product-hover-icon i {
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+.bg-featured .Products-box .product-hover-icon i:hover {
+  background-color: var(--bs-primary);
+}
+.bg-featured .Products-box:hover .cart {
+  background-color: var(--bs-primary);
+}
+.bg-featured .Products-box:hover .product-overlay {
+  visibility: visible;
+  right: 0;
+}
+.bg-featured .Products-box:hover .product-bg-overlay {
+  left: 0;
+  visibility: visible;
+}
+.bg-featured .Products-box:hover .product-hover-icon {
+  visibility: visible;
+  opacity: 1;
+  top: 35%;
+}
+.bg-featured .Products-box:hover h4 {
+  color: var(--bs-primary);
+}
+
+.move-bg {
+  background-image: url(../img/img8.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+}
+.move-bg .move-info {
+  position: relative;
+  width: 580px;
+  height: 580px;
+  border-radius: 100%;
+  padding: 50px;
+}
+.move-bg .move-info .website-btn {
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+  border: 0;
+  margin-top: 20px;
+  transition: all 0.5s;
+  position: relative;
+}
+.move-bg .move-info .website-btn::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  border-top: 1px solid var(--bs-primary);
+  border-left: 1px solid var(--bs-primary);
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.move-bg .move-info .website-btn::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid var(--bs-primary);
+  border-bottom: 1px solid var(--bs-primary);
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.move-bg .move-info .website-btn:hover {
+  background-color: white;
+  color: black;
+}
+.move-bg .move-info .website-btn:hover::after {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+.move-bg .move-info .website-btn:hover::before {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+.move-bg .border-box {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  top: 15px;
+  left: 15px;
+  background-color: transparent;
+  border: 2px dashed black;
+  border-radius: 100%;
+}
+
+.mission {
+  overflow: hidden;
+  perspective: 1000px;
+}
+.mission .bg-about {
+  padding: 80px 50px;
+}
+.mission .bg-about h5 {
+  line-height: 35px;
+}
+.mission .bg-about p {
+  color: rgba(255, 255, 255, 0.529);
+}
+.mission .bg-about .website-btn {
+  background-color: var(--bs-primary);
+  color: var(--bs-white);
+  border: 0;
+  transition: all 0.5s;
+  position: relative;
+}
+.mission .bg-about .website-btn::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  border-top: 1px solid var(--bs-primary);
+  border-left: 1px solid var(--bs-primary);
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.mission .bg-about .website-btn::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid var(--bs-primary);
+  border-bottom: 1px solid var(--bs-primary);
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.mission .bg-about .website-btn:hover {
+  background-color: transparent;
+  color: white;
+}
+.mission .bg-about .website-btn:hover::after {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+.mission .bg-about .website-btn:hover::before {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+.mission .main-box {
+  width: 250px;
+  height: 200px;
+  margin: 50px auto;
+  perspective: 1000px;
+}
+.mission .main-box .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+.mission .main-box .card .front,
+.mission .main-box .card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+.mission .main-box .card .front img,
+.mission .main-box .card .back img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.mission .main-box .card .back {
+  transform: rotatey(180deg);
+  padding: 50px 10px;
+  background: linear-gradient(29deg, rgba(0, 0, 0, 0.9764937683) 56%, rgba(62, 62, 62, 0.9530333578) 99%);
+}
+.mission .main-box .card .back h5 {
+  font-size: 13px;
+  padding: 10px 0;
+}
+.mission .main-box .card .back h6 {
+  font-size: 15px;
+}
+.mission .main-box:hover .card {
+  transform: rotatey(180deg);
+}
+
+.program .our-program .our-image {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  border-radius: 100%;
+  border: 10px solid black;
+  overflow: hidden;
+  transition: all 0.5s;
+  margin: auto;
+}
+.program .our-program .our-image img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+.program .our-program .our-image .our-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+  line-height: 250px;
+  transition: all 0.5s;
+}
+.program .our-program .our-image .our-hover-content .our-overlay {
+  visibility: hidden;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+.program .our-program .our-image .our-hover-content .our-overlay h2 {
+  margin-top: 70px;
+}
+.program .our-program .our-image .our-hover-content .our-overlay p {
+  position: absolute;
+  top: -60px;
+  right: 80px;
+}
+.program .our-program .our-image:hover {
+  border: 10px solid rgb(29, 29, 29);
+}
+.program .our-program .our-image:hover img {
+  transform: scale(1.1);
+}
+.program .our-program .our-image:hover .our-hover-content {
+  background-color: rgba(0, 0, 0, 0.584);
+}
+.program .our-program .our-image:hover .our-hover-content .our-overlay {
+  visibility: visible;
+  transform: scale(1);
+}
+.program .website-btn {
+  background-color: black;
+  color: var(--bs-white);
+  border: 0;
+  transition: all 0.5s;
+  position: relative;
+  left: 42%;
+}
+.program .website-btn::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.program .website-btn::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.program .website-btn:hover {
+  background-color: white;
+  color: black;
+}
+.program .website-btn:hover::after {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+.program .website-btn:hover::before {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-blog {
+  background-image: url(../img/img12.jpg);
+  background-size: cover;
+  padding-bottom: 50px;
+}
+.bg-blog .blog-card {
+  position: relative;
+  background-color: white;
+}
+.bg-blog .blog-card .card-img img {
+  width: 100%;
+}
+.bg-blog .blog-card .blog-card-body {
+  position: absolute;
+  bottom: -420px;
+  width: 90%;
+  padding: 30px;
+  height: 480px;
+  margin: 0 20px;
+}
+.bg-blog .blog-card .card-information {
+  padding: 5px 50px;
+  padding-bottom: 50px;
+  position: absolute;
+  z-index: 1;
+}
+.bg-blog .blog-card .card-information h3 {
+  transition: all 0.5s;
+  font-weight: 400;
+}
+.bg-blog .blog-card .card-information h3:hover {
+  color: var(--bs-primary);
+}
+.bg-blog .blog-card .card-information p {
+  line-height: 35px;
+}
+.bg-blog .blog-card .card-information .website-btn {
+  background-color: #191919;
+  color: var(--bs-white);
+  border: 0;
+  transition: all 0.5s;
+  position: relative;
+}
+.bg-blog .blog-card .card-information .website-btn::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.bg-blog .blog-card .card-information .website-btn::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  right: 0;
+  bottom: 0;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.bg-blog .blog-card .card-information .website-btn:hover {
+  background-color: white;
+  color: black;
+}
+.bg-blog .blog-card .card-information .website-btn:hover::after {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+.bg-blog .blog-card .card-information .website-btn:hover::before {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
+}
+.bg-blog .space-box {
+  margin: 500px 0;
+}
+.bg-blog .wrapper .wrapper-add {
+  position: relative;
+}
+.bg-blog .wrapper .wrapper-add input {
+  right: 0;
+  font-size: 20px;
+  outline: none;
+  width: 300px;
+}
+.bg-blog .wrapper .wrapper-add button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 30px;
+  height: 38px;
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+.bg-blog .wrapper .wrapper-add button:hover {
+  background-color: var(--bs-primary);
+}
+
+.team {
+  background-image: url(../img/img10-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+}
+.team .team-info {
+  position: relative;
+  margin: 30px;
+}
+.team .team-info p {
+  line-height: 35px;
+}
+.team .team-info .team-img {
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  margin: auto;
+}
+.team .team-info .team-name {
+  position: absolute;
+  top: 100%;
+}
+.team .team-info .team-name span {
+  font-size: 12px;
+}
+
+.contact {
+  overflow: hidden;
+}
+.contact .contact-info {
+  background-color: rgb(247, 245, 245);
+  padding: 50px 100px;
+}
+.contact .contact-info h2 {
+  padding: 30px 0;
+}
+.contact .contact-info i {
+  padding-right: 15px;
+}
+.contact .contact-info p {
+  padding-bottom: 5px;
+}
+.contact .contact-info p span {
+  font-weight: bold;
+}
+.contact h2 {
+  padding: 50px 0;
+}
+.contact form {
+  position: relative;
+}
+.contact form input {
+  border: none;
+  width: 100%;
+  padding: 15px 35px;
+  border-bottom: 1px solid rgb(116, 116, 116);
+  margin-bottom: 5px;
+  outline: none;
+  transition: all 0.5s;
+}
+.contact form input:hover {
+  border-bottom: 1px solid var(--bs-primary);
+}
+.contact form i {
+  position: absolute;
+  left: 10px;
+  color: var(--bs-primary);
+  padding-top: 15px;
+}
+.contact form textarea {
+  border: none;
+  width: 100%;
+  padding: 15px 35px;
+  border-bottom: 1px solid rgb(116, 116, 116);
+  margin-bottom: 5px;
+  outline: none;
+  transition: all 0.5s;
+}
+.contact form textarea:hover {
+  border-bottom: 1px solid var(--bs-primary);
+}
+.contact form button {
+  margin: 10px 20px;
+  width: 90%;
+  padding: 12px 0;
+  border: none;
+  background-color: var(--bs-primary);
+  color: white;
+  transition: all 0.5s;
+}
+.contact form button:hover {
+  background-color: transparent;
+  border: 2px solid var(--bs-primary);
+  color: black;
+}
+
+footer {
+  background-image: url(../img/footer-img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+footer .footer-overlay {
+  background-color: rgba(0, 0, 0, 0.724);
+}
+footer .footer-overlay .footer-content a img {
+  width: 300px;
+}
+footer .footer-overlay .footer-content input {
+  padding: 10px 30px;
+  padding-right: 200px;
+  border-color: transparent;
+  outline: none;
+}
+footer .footer-overlay .footer-content button {
+  padding: 10px 30px;
+  background-color: var(--bs-primary);
+  transition: all 0.5s;
+  color: white;
+  border-color: transparent;
+}
+footer .footer-overlay .footer-content button:hover {
+  background-color: black;
+  border-color: white;
+}
+footer .footer-overlay .footer-content .footer-icon i {
+  color: var(--bs-primary);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+footer .footer-overlay .footer-content .footer-icon i:hover {
+  color: white;
+}
+footer .footer-overlay .copy-right {
+  border-top: 1px solid rgba(255, 255, 255, 0.593);
+  padding: 50px;
+}
+
+.backtotop a button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+  z-index: 9999;
+  background-color: var(--bs-primary);
+  transition: all 0.5s;
+}
+.backtotop a button:hover {
+  background-color: black;
+}
+.backtotop a button i {
+  line-height: 40px;
+}
+
+.fix {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+}/*# sourceMappingURL=style.css.map */
